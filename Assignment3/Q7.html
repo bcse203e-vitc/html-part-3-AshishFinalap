@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Timetable</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        .keynote {
+            background-color: gold; /* Gold for keynotes */
+        }
+        .workshop {
+            background-color: green; /
+        }
+        .panel {
+            background-color: pink; /* 
+        }
+        .break {
+            background-color: blue; /* Light grey for breaks */
+        }
+        .combined-session {
+            background-color: yellow; /
+        }
+    </style>
+</head>
+<body>
+
+<h2>Timetable</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>Room A</th>
+            <th>Room B</th>
+            <th>Room C</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>09:00 - 10:00</td>
+            <td class="keynote" colspan="3" title="Dr. Rajesh Sharma | Opening Keynote on Innovation">Opening Keynote</td>
+        </tr>
+        <tr>
+            <td>10:00 - 11:00</td>
+            <td class="workshop" rowspan="2" title="Pooja Singh | AI & ML Workshop">AI Workshop</td>
+            <td class="panel" colspan="2" title="Panel: Future of Technology">Tech Panel</td>
+        </tr>
+        <tr>
+            <td>11:00 - 12:00</td>
+            <td class="workshop" title="Amit Patel | Cloud Workshop">Cloud Computing</td>
+            <td class="workshop" title="Kiran Desai | Blockchain Workshop">Blockchain</td>
+        </tr>
+        <tr>
+            <td>12:00 - 01:00</td>
+            <td class="break" colspan="3">Lunch Break</td>
+        </tr>
+        <tr>
+            <td>01:00 - 02:00</td>
+            <td class="keynote" colspan="3" title="Prof. Vandana Menon | Cybersecurity Keynote">Cybersecurity Keynote</td>
+        </tr>
+        <tr>
+            <td>02:00 - 03:00</td>
+            <td class="workshop" title="Rahul Verma | Big Data Workshop">Big Data</td>
+            <td class="combined-session" colspan="2" title="Neha Kapoor | Data Analytics">Data Analytics</td>
+        </tr>
+        <tr>
+            <td>03:00 - 04:00</td>
+            <td class="workshop" title="Arjun Iyer | Web Development">Web Dev</td>
+            <td class="workshop" title="Priya Joshi | Mobile Apps">Mobile Apps</td>
+            <td class="workshop" title="Vikram Bansal | IoT">IoT</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Legend</h3>
+<ul>
+    <li><span style="background-color: gold;">&nbsp;&nbsp;&nbsp;</span> Keynote</li>
+    <li><span style="background-color: blue;">&nbsp;&nbsp;&nbsp;</span> Workshop</li>
+    <li><span style="background-color: pink;">&nbsp;&nbsp;&nbsp;</span> Panel Discussion</li>
+    <li><span style="background-color: gray;">&nbsp;&nbsp;&nbsp;</span> Break</li>
+</ul>
+
+</body>
+</html>
