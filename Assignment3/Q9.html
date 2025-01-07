@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .veg-icon {
+            color: green;
+        }
+        .veg-dish {
+            background-color:green; 
+        }
+    </style>
+</head>
+<body>
+
+<h2>Restaurant Menu</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Dish Name</th>
+            <th>Category</th>
+            <th>Ingredients</th>
+            <th>Price (₹)</th>
+            <th>Customer Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="veg-dish">
+            <td>Paneer Tikka <span class="veg-icon">🫑</span></td>
+            <td>Appetizer</td>
+            <td rowspan="2">Paneer, Spices, Yogurt</td>
+            <td>250</td>
+            <td>★★★★</td>
+        </tr>
+        <tr class="veg-dish">
+            <td>Paneer Butter Masala <span class="veg-icon">🫑</span></td>
+            <td>Main Course</td>
+            <td>300</td>
+            <td>★★★★★</td>
+        </tr>
+        <tr>
+            <td>Chicken Kebab</td>
+            <td>Appetizer</td>
+            <td rowspan="2">Chicken, Spices, Yogurt</td>
+            <td>350</td>
+            <td>★★★★</td>
+        </tr>
+        <tr>
+            <td>Butter Chicken</td>
+            <td>Main Course</td>
+            <td>450</td>
+            <td>★★★★★</td>
+        </tr>
+        <tr class="veg-dish">
+            <td>Gulab Jamun <span class="veg-icon">🫑</span></td>
+            <td>Dessert</td>
+            <td>Milk Solids, Sugar Syrup</td>
+            <td>150</td>
+            <td>★★★</td>
+        </tr>
+        <tr>
+            <td>Chocolate Lava Cake</td>
+            <td>Dessert</td>
+            <td>Chocolate, Flour, Butter</td>
+            <td>200</td>
+            <td>★★★★</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
